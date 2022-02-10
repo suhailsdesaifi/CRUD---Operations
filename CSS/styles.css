@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body {
+    background: linear-gradient(to right, crimson, rgb(228, 68, 9));
+}
+/* .main {
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+} */
+nav {
+    /* width: 100%; */
+    color: #fff;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 1rem;
+    border: 2px solid hsl(0 0% 100% / 0);
+    background-color: hsl(0 0% 100% / 0.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+@supports (backdrop-filter: blur(1rem)) {
+    nav{
+        background-color: hsl(0 0% 100% /0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+    text-align: center;
+}
+#btn {
+    cursor: pointer;
+    height: 2rem;
+    width: 10rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+#btn:hover {
+    background-color: royalblue;
+    color: #fff;
+}
+#butn {
+    margin-top: 1rem;
+    cursor: pointer;
+    height: 2rem;
+    width: 10rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+#butn:hover {
+    color: white;
+    background-color: rgba(255, 0, 0, 0.9);
+}
+#login {
+    cursor: pointer;
+    height: 2rem;
+    width: 10rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+#login:hover {
+    background-color: royalblue;
+    color: #fff;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    margin-top: .5rem;
+    height: 20rem;
+    width: 15rem;
+    padding: 5px;
+    float: right;
+    margin-right: 8.2rem;
+    margin-top: 7rem;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+.image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5rem;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+img {
+    border-radius: 100%;
+}
+input {
+    cursor: pointer;
+    height: 2rem;
+    width: 12rem;
+    font-weight: 700;
+    border-radius: .2rem;
+    padding-inline: 1rem;
+    margin-top: 0.2rem;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .5);
+}
+input:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* Read Operation */
+.hero {
+    display: flex;
+    place-items: center;
+}
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 7em;
+    max-width: 1000px;
+    
+    /* outline: 2px solid red; */
+}
+.card {
+    height: 20rem;
+    width: 15rem;
+    padding: 5px;
+    border-radius: .5rem;
+    border: 1px solid white;
+    display: grid;
+    place-items: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+.text {
+    text-align: center;
+}
+p {
+    margin-bottom: 0.3rem;
+}
+.container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cart-items {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* SignUp Profiles */
+.container {
+    margin-top: 10rem;
+}
+
+#newProfile {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
